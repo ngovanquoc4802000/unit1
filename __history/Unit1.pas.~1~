@@ -1,0 +1,5 @@
+JsonBody := Format(
+  '{"question":"%s", "context":"%s", "targetLang":"ko"}',
+  [Question.Replace('"', '\"'),
+   Context.Replace('"', '\"').Replace(sLineBreak, '\n')]
+);

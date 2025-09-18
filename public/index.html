@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>미주봇 웹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>미주봇 웹</h1>
+        <div class="meta">
+          <label
+            >사업자등록번호(regno):
+            <input id="regno" type="text" placeholder="ex) 123-45-67890"
+          /></label>
+          <label
+            >전화(tel):
+            <input id="telno" type="text" placeholder="ex) 02-1234-5678"
+          /></label>
+          <label
+            >휴대폰(cell):
+            <input id="cellno" type="text" placeholder="ex) 010-1234-5678"
+          /></label>
+        </div>
+      </header>
+
+      <main>
+        <div id="chat" class="chat"></div>
+
+        <div class="controls">
+          <div class="mode">
+            <label
+              ><input type="radio" name="mode" value="chat" checked />
+              질문</label
+            >
+            <label><input type="radio" name="mode" value="tr" /> 번역</label>
+          </div>
+
+          <div class="input-row">
+            <input
+              id="question"
+              type="text"
+              placeholder="여기에 질문 입력 후 Enter"
+            />
+            <button id="sendBtn">전송</button>
+          </div>
+
+          <div class="stt-row">
+            <button id="sttStart">STT 시작</button>
+            <button id="sttStop">STT 중지</button>
+          </div>
+
+          <div class="save-row">
+            <button id="summarizeSave">마지막 질문 요약 후 DB 저장</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

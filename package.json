@@ -1,0 +1,19 @@
+{
+  "name": "mijubot-web",
+  "version": "1.0.0",
+  "description": "미주봇 웹 클라이언트(Node.js + Express)",
+  "main": "server.js",
+   "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
+    "node-fetch": "^2.7.0",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.0"
+  }
+}
